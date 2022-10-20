@@ -54,4 +54,15 @@ Max/Min,Avg: select Max(Gaji) from Data2
 
 4. Where statement
 
+Select* 
+from Data1
+where Umur =30 
+(note: we can change = to <, >, <>, depends on what you need)
+
+Or and And: 
+Select* 
+from Data1
+where Umur =30 or IdKaryawan<104
+
+
 

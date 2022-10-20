@@ -1,3 +1,10 @@
+###Contens:
+1. Create table
+2. Input value to table
+3. To find top, distinct, count, As, Max, Min, Avg
+
+________________________________________________________________________________________________
+1. Create table
 
 ##Table 1 Query:
 Create table Data1
@@ -11,9 +18,10 @@ Umur int
 Create table Data2
 (IdKaryawan int,
 Pekerjaan varchar(50),
-Gaji int int
+Gaji int
 )
 
+2. Input value to table
 
 insert into Data1 values
 (101, 'Andi',	'Hidayat',	30),
@@ -26,7 +34,6 @@ insert into Data1 values
 (108, 'Fika',	'Marinka',	40),
 (109, 'Hand',	'Sebastian',	20)
 
-
 insert into Data2 values
 (101,'Guru', 3500000),
 (102,'Insiyur', 4500000),
@@ -37,3 +44,9 @@ insert into Data2 values
 (107,'DataAnalis', 8500000),
 (108,'Manager', 9500000),
 (109,'Insiyur', 4500000)
+
+3. To find top, distinct, count, As, Max, Min, Avg
+Top: select top 5* from Data1
+Distinct: select distinct (Umur) from Data1
+Count & As: select count (IdKaryawan) as IdKaryawanCount from Data1
+Max/Min,Avg: select Max(Gaji) from Data2

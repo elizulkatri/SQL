@@ -1,1 +1,11 @@
-Will be back soon
+For this section, I try to cover several some of SQL query which are:
+1. Join
+2. Unios
+3. Case Statement
+4. Partition by
+5. Data Types
+6. Aliasing
+7. Creating views
+8. Having vs Group by statement
+9. Getdate()
+10. Primary key vs Foreign Key

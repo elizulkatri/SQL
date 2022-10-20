@@ -64,5 +64,19 @@ Select*
 from Data1
 where Umur =30 or IdKaryawan<104
 
+Like :
+Select* 
+from Data1
+where NamaPertama like 'A%'
+
+Null/ Not Null:
+Select* 
+from Data1
+where NamaPertama is not null
+
+IN:
+Select* 
+from Data1
+where NamaPertama IN ('Andi', 'Elly')
 
 

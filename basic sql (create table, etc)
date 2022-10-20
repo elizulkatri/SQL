@@ -82,7 +82,6 @@ where NamaPertama IN ('Andi', 'Elly')
 
 5. Group by and Order by
 
-Group by: 
 Select Umur, NamaTerakhir, count(Umur) as UmurCount
 from Data1
 where Umur>25

@@ -1,1 +1,39 @@
 
+##Table 1 Query:
+Create table Data1
+(IdKaryawan int,
+NamaPertama varchar(50),
+NamaTerakhir varchar(50),
+Umur int
+)
+
+##Table 2 Query:
+Create table Data2
+(IdKaryawan int,
+Pekerjaan varchar(50),
+Gaji int int
+)
+
+
+insert into Data1 values
+(101, 'Andi',	'Hidayat',	30),
+(102, 'Mike',	'Jole',	25),
+(103, 'Adto',	'Hidayat',	21),
+(104, 'Aroe', 'Hidayah',	32),
+(105, 'Bika',	'Handi',	32),
+(106, 'Cinta',	'Laura',	40),
+(107, 'Elly',	'Hebat',	50),
+(108, 'Fika',	'Marinka',	40),
+(109, 'Hand',	'Sebastian',	20)
+
+
+insert into Data2 values
+(101,'Guru', 3500000),
+(102,'Insiyur', 4500000),
+(103,'Dokter', 5500000),
+(104,'Dokter', 5500000),
+(105,'Bidan', 3500000),
+(106,'Camat', 7500000),
+(107,'DataAnalis', 8500000),
+(108,'Manager', 9500000),
+(109,'Insiyur', 4500000)

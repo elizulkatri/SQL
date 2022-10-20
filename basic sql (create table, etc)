@@ -3,6 +3,7 @@
 2. Input value to table
 3. To find top, distinct, count, As, Max, Min, Avg
 4. Where statement
+5. Group by and Order by
 ________________________________________________________________________________________________
 1. Create table
 
@@ -79,4 +80,11 @@ Select*
 from Data1
 where NamaPertama IN ('Andi', 'Elly')
 
+5. Group by and Order by
 
+Group by: 
+Select Umur, NamaTerakhir, count(Umur) as UmurCount
+from Data1
+where Umur>25
+group by Umur, NamaTerakhir
+order by Umur DESC >>Desc/ASC 

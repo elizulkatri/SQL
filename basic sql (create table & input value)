@@ -2,7 +2,7 @@
 1. Create table
 2. Input value to table
 3. To find top, distinct, count, As, Max, Min, Avg
-
+4. Where statement
 ________________________________________________________________________________________________
 1. Create table
 
@@ -46,7 +46,12 @@ insert into Data2 values
 (109,'Insiyur', 4500000)
 
 3. To find top, distinct, count, As, Max, Min, Avg
+
 Top: select top 5* from Data1
 Distinct: select distinct (Umur) from Data1
 Count & As: select count (IdKaryawan) as IdKaryawanCount from Data1
 Max/Min,Avg: select Max(Gaji) from Data2
+
+4. Where statement
+
+

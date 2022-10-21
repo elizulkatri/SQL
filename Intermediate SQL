@@ -61,3 +61,9 @@ Inner Join Data2
 ON Data1.IdKaryawan=Data2.IdKaryawan
 Where Pekerjaan = 'Dokter'
 Group by Pekerjaan
+
+____________________________________________________
+
+2. Unios
+
+

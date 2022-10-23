@@ -2,13 +2,8 @@ For this section, I try to cover several some of SQL query which are:
 1. Join
 2. Unios
 3. Case Statement
-4. Partition by
-5. Data Types
-6. Aliasing
-7. Creating views
-8. Having vs Group by statement
-9. Getdate()
-10. Primary key vs Foreign Key
+4. Having
+5. Update/Deleting Data
 
 ____________________________________________________________________________
 
@@ -82,12 +77,39 @@ From Data1
 Inner Join Data2
 On Data1.IdKaryawan=Data2.Idkaryawan
 
-##lalu
+##lalu bikin Data4 untuk hasil case statement
 Select IdKaryawan, Pekerjaan, Gaji,
 Case
-	When Gaji>900000 Then 'Besar'
-	When Gaji between 4000000 and 9000000 Then 'Sedang'
+	When Gaji between 4000000 and 10000000 Then 'Besar'
 	Else 'Kecil' 
 End As KategoriGaji
+Into Data4
 From Data3
+Order by Gaji DESC
 
+____________________________________
+
+4. Having
+
+Select Pekerjaan, Count (Pekerjaan) As Jumlahekerjaan
+From Data1
+Join Data2
+On Data1.IdKaryawan = Data2.IdKaryawan
+Group by Pekerjaan 
+Having count (Pekerjaan) > 1
+Order by Jumlahekerjaan
+
+____________________________________
+
+5. Update/Deleting Data
+
+Update Data1 
+Set NamaTerakhir = 'Fikacu'
+Where IdKaryawan=1010
+
+Delete:
+Insert Into Data2 Values
+(110, 'Guru', 4000000)
+
+Delete Data2
+where IdKaryawan=110

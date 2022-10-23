@@ -1,0 +1,23 @@
+1. CTE (Common Table Expression)
+2. Temp Tables
+
+______________________________________________________________________
+
+1. CTE (Common Table Expression)
+
+With CTE As
+(
+Select Data1.IdKaryawan, NamaPertama, NamaTerakhir, Umur, Pekerjaan, Gaji
+, count(Umur) Over (Partition by Umur) As TotalUmur
+, Avg (Gaji) Over (Partition by Gaji) As RataGaji
+From Data1
+Join Data2
+on Data1.IdKaryawan = Data2.IdKaryawan
+)
+Select * from CTE
+
+_________________
+
+2. Temp Tables
+
+WILL CONTINUE...!

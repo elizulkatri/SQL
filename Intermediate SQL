@@ -66,4 +66,18 @@ ____________________________________________________
 
 2. Unios
 
+Select IdKaryawan 
+From Data1
+Union
+Select IdKaryawan 
+From Data2
+___________________________________________________
 
+3. Case Statement
+##Bikin table lagi dari hasil innner join Data1 dan Data2 untuk mempermudah
+
+Select Data1.IdKaryawan, NamaPertama, NamaTerakhir, Umur, Pekerjaan, Gaji
+Into Data3
+From Data1
+Inner Join Data2
+On Data1.IdKaryawan=Data2.Idkaryawan

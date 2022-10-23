@@ -81,3 +81,13 @@ Into Data3
 From Data1
 Inner Join Data2
 On Data1.IdKaryawan=Data2.Idkaryawan
+
+##lalu
+Select IdKaryawan, Pekerjaan, Gaji,
+Case
+	When Gaji>900000 Then 'Besar'
+	When Gaji between 4000000 and 9000000 Then 'Sedang'
+	Else 'Kecil' 
+End As KategoriGaji
+From Data3
+
